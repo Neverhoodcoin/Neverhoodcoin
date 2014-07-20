@@ -7,7 +7,7 @@ P2P Port: 13306
 
 Algorithm: X15 POW/POS
 Ticker: NHC
-Max PoW Coins: ~200,000 NHC
+Max PoW Coins: ~615,000 NHC
 PoS Starts on Block 5000 ~3-4 days
 PoS 10% Annual Interest
 
