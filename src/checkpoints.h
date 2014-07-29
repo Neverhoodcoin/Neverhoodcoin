@@ -63,7 +63,7 @@ namespace Checkpoints
     bool IsMatureSyncCheckpoint();
 }
 
-// ppcoin: synchronized checkpoint
+// coin: synchronized checkpoint
 class CUnsignedSyncCheckpoint
 {
 public:
