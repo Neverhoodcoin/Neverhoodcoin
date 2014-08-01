@@ -1,4 +1,4 @@
-Name NovaCoin
+Name coin
 
 RequestExecutionLevel highest
 SetCompressor /SOLID lzma
@@ -6,11 +6,11 @@ SetCompressor /SOLID lzma
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
 !define VERSION 0.3.0
-!define COMPANY "NovaCoin project"
-!define URL http://www.novacoin.ru/
+!define COMPANY "coin project"
+!define URL http://www.coin.ru/
 
 # MUI Symbol Definitions
-!define MUI_ICON "../share/pixmaps/novacoin.ico"
+!define MUI_ICON "../share/pixmaps/coin.ico"
 !define MUI_WELCOMEFINISHPAGE_BITMAP "../share/pixmaps/nsis-wizard.bmp"
 !define MUI_HEADERIMAGE
 !define MUI_HEADERIMAGE_RIGHT
@@ -19,8 +19,8 @@ SetCompressor /SOLID lzma
 !define MUI_STARTMENUPAGE_REGISTRY_ROOT HKLM
 !define MUI_STARTMENUPAGE_REGISTRY_KEY ${REGKEY}
 !define MUI_STARTMENUPAGE_REGISTRY_VALUENAME StartMenuGroup
-!define MUI_STARTMENUPAGE_DEFAULTFOLDER NovaCoin
-#!define MUI_FINISHPAGE_RUN $INSTDIR\novacoin-qt.exe
+!define MUI_STARTMENUPAGE_DEFAULTFOLDER coin
+#!define MUI_FINISHPAGE_RUN $INSTDIR\coin-qt.exe
 !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
 !define MUI_UNWELCOMEFINISHPAGE_BITMAP "../share/pixmaps/nsis-wizard.bmp"
 !define MUI_UNFINISHPAGE_NOAUTOCLOSE
@@ -45,14 +45,14 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile novacoin-0.3.0-win32-setup.exe
-InstallDir $PROGRAMFILES\NovaCoin
+OutFile coin-0.3.0-win32-setup.exe
+InstallDir $PROGRAMFILES\coin
 CRCCheck on
 XPStyle on
 BrandingText " "
 ShowInstDetails show
 VIProductVersion 0.3.0.0
-VIAddVersionKey ProductName NovaCoin
+VIAddVersionKey ProductName coin
 VIAddVersionKey ProductVersion "${VERSION}"
 VIAddVersionKey CompanyName "${COMPANY}"
 VIAddVersionKey CompanyWebsite "${URL}"
